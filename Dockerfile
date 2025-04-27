@@ -64,6 +64,10 @@ RUN dnf -y install \
 RUN dnf -y install \
     cups cups-client cups-filesystem
 
+# Web Service
+RUN dnf -y install \
+    httpd
+
 RUN dnf clean all
 
 # 시스템 타임존 설정 (선택)
